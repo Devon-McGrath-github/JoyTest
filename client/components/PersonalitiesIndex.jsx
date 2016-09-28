@@ -5,7 +5,7 @@ import SubNav from '../containers/SubNavContainer'
 
 export default (props) => {
   return (
-    <div className="PersonalitiesIndex-container">
+    <div className="IndexContainer">
         <div className="menu">
           <p>replace with menu img</p>
         </div>

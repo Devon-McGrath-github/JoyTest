@@ -3,6 +3,7 @@ import { routerReducer } from 'react-router-redux'
 
 // import auth from './authReducer'
 import placeholder from './PlaceholderReducer'
+import banana from './bananaReducer'
 
 const reducers = {
   routing: routerReducer,
