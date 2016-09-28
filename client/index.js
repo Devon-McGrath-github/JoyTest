@@ -16,6 +16,8 @@ import App from './components/App'
 import PersonalitiesIndex from './containers/PersonalitiesIndexContainer'
 import ThingDetail from './containers/ThingDetailContainer'
 
+import Page1 from './components/Page-1'
+
 let store = createStore(
   appReducer, compose(
     applyMiddleware(thunk),
@@ -30,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <Router history={history}>
         <Route path="/" component={App}>
           <IndexRoute component={PersonalitiesIndex} />
+          <Route path='page-1' component={Page1} />
           <Route name="detail" component={ThingDetail} path="details/:id" />
         </Route>
       </Router>
