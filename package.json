@@ -1,7 +1,7 @@
 {
-  "name": "wotwot-v2",
+  "name": "joytest",
   "version": "1.0.0",
-  "description": "This is the final restart",
+  "description": "Test run",
   "main": "server/server.js",
   "scripts": {
     "dev-server": "webpack-dev-server",
@@ -11,6 +11,10 @@
     "server": "node-inspector --web-port 5858 & npm run transpile && node-dev --debug server/lib/server",
     "test": "ava --watch",
     "transpile": "babel server --ignore server/lib,server/static --out-dir server/lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Devon-McGrath-github/JoyTest.git"
   },
   "ava": {
     "failfast": true,
