@@ -12,6 +12,7 @@ export default (props) => {
 
       <div><p>previous page button placeholder</p></div>
       <div className="statusBar"><p className="placeholder-statusBar">----------------</p></div>
+
       <div><p>next page button placeholder (Link/image)</p></div>
 
     </div>

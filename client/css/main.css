@@ -22,5 +22,11 @@ p, h1, h2, h3 {
 }
 
 .title-mid {
-  color: white;
+  color: black;
+}
+
+.nextPage {
+  background-image: url(./images/coursesButtons-03.png);
+  width: 116px;
+  height: 96px;
 }

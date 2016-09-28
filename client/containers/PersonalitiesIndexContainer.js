@@ -5,9 +5,12 @@ import { showDetails, addThing } from '../actions'
 
 const mapStateToProps = (state) => {
   return {
-    things: state.things
+    things: state.things,
+    placeholder: state.placholder,
   }
 }
+// images: state.images,
+// nextPage: state.nextPage
 
 const mapDispatchToProps = (dispatch) => {
   return {
