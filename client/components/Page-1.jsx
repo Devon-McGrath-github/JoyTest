@@ -6,14 +6,21 @@ export default (props) => {
   let next = allImages.nextArrow
   let prev = allImages.previousArrow
 
+  let megaPhone = allImages.megaPhone
+
   return (
     <div className="pagesContainer">
       <div className="content">
         <div className="menu">
-          <p>replace with menu img</p>
+          <p>MENU button</p>
         </div>
 
         <h2>Putting it all together</h2>
+
+        <div>
+          <p>Now you know a bit about your audience, and the different media channels you can use to reach them. So what are you going to say to them?</p>
+          <img src={megaPhone} />
+        </div>
 
         <div><p>previous page button placeholder</p></div>
 

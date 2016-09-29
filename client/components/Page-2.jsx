@@ -10,7 +10,7 @@ export default (props) => {
     <div className="pagesContainer">
       <div className="content">
         <div className="menu">
-          <p>replace with menu img</p>
+          <p>MENU button</p>
         </div>
 
         <h3 className="title-mid">Measuring Effectiveness Depends on the method</h3>
@@ -23,6 +23,5 @@ export default (props) => {
 
       </div>
     </div>
-
   )
 }

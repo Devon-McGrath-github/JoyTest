@@ -11,7 +11,7 @@ export default (props) => {
     <div className="IndexContainer">
       <div className="content">
         <div className="menu">
-          <p>replace with menu img</p>
+          <p>MENU button</p>
         </div>
 
         <h3 className="title-mid">What is branding?</h3>
