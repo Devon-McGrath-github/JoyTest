@@ -7,7 +7,8 @@ const mapStateToProps = (state) => {
   return {
     hello: state.hello,
     test: state.test,
-    nextPage: state.nextPage
+    nextPage: state.nextPage,
+    imageInfo: state.imageInfo
   }
 }
 

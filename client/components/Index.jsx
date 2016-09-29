@@ -8,12 +8,15 @@ console.log('Index.jsx page loaded log');
 
 
 export default (props) => {
+  console.log('');
   console.log('props log', props);
-  const tester = R.values(props.test)
-  console.log(tester);
-  console.log('hello value ', props.hello);
-  console.log('test value ', props.test);
-  console.log('nextPage value ', props.nextPage);
+  console.log('image info log', props.imageInfo);
+  let info = R.values(props.imageInfo)
+  console.log('info log', info);
+  // console.log(tester);
+  console.log('hello value ', info.hello);
+  // console.log('test value ', props.test);
+  // console.log('nextPage value ', props.nextPage);
 
   return (
     <div className="IndexContainer">
