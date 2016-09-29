@@ -10,14 +10,14 @@ export default (props) => {
 
   return (
     <div className="pagesContainer">
-      <div className="content">
-        <div className="menu">
+      <div className="contentContainer">
+        <div className="menu-button">
           <p>MENU button</p>
         </div>
 
         <h2>Putting it all together</h2>
 
-        <div>
+        <div className>
           <p>Now you know a bit about your audience, and the different media channels you can use to reach them. So what are you going to say to them?</p>
           <img src={megaPhone} />
         </div>

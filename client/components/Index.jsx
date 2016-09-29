@@ -9,8 +9,8 @@ export default (props) => {
 
   return (
     <div className="IndexContainer">
-      <div className="content">
-        <div className="menu">
+      <div className="contentContainer">
+        <div className="menu-button">
           <p>MENU button</p>
         </div>
 
