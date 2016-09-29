@@ -1,16 +1,16 @@
 import { connect } from 'react-redux'
 
-import SubNav from '../components/SubNav'
+import component from '../components/Page-1'
 
 const mapStateToProps = (state) => {
   return {
+    imageInfo: state.imageInfo
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    // logout dispatcher
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SubNav)
+export default connect(mapStateToProps)(component)

@@ -1,0 +1,30 @@
+html, body, #app {
+  height: 100%;
+  margin: 0;
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+#app-view {
+  height: 100%;
+  display: fixed;
+}
+
+.IndexContainer {
+  height: 100%;
+  /*margin-top: 0;
+  margin-left: 10%;
+  margin-bottom: 0;
+  margin right: 10%; */
+  background-color: white;
+}
+
+.title-mid {
+  color: black;
+}
+
+.nextPage {
+  background-image: url(./images/coursesButtons-03.png);
+}

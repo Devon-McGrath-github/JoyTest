@@ -7,15 +7,18 @@ import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
 import { createStore, applyMiddleware, compose } from 'redux'
 import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 
-// import actions from './actions/...........'
+// -----------------------------
+
 import actions from './actions'
 
 import appReducer from './reducers/combineReducers'
 
 import App from './components/App'
-import PersonalitiesIndex from './containers/PersonalitiesIndexContainer'
-import ThingDetail from './containers/ThingDetailContainer'
+import Index from './containers/IndexContainer'
+import Page1 from './containers/Page-1-Container'
+import Page2 from './containers/Page-2-Container'
 
+// devToolsExtension is a chrome extension for redux development
 let store = createStore(
   appReducer, compose(
     applyMiddleware(thunk),
@@ -29,8 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
     <Provider store={store}>
       <Router history={history}>
         <Route path="/" component={App}>
-          <IndexRoute component={PersonalitiesIndex} />
-          <Route name="detail" component={ThingDetail} path="details/:id" />
+          <IndexRoute component={Index} />
+
+          <Route path='page-1' component={Page1} />
+          <Route path='page-2' component={Page2} />
+
         </Route>
       </Router>
     </Provider>,

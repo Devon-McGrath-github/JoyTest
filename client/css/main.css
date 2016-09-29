@@ -1,3 +1,52 @@
-body {
+html, body, #app {
   height: 100%;
+  margin: 0;
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+#app-view {
+  height: 100%;
+  padding: 0px;
+  display: fixed;
+}
+
+.IndexContainer {
+  background-color: purple;
+  padding: 0px;
+  height: 100%;
+}
+
+/* ---- pages Container ---- */
+.pagesContainer {
+  background-color: white;
+  padding: 0px;
+  height: 100%;
+}
+
+/* ----- END pagesContainer END ---- */
+
+.content {
+  margin-left: 20%;
+  margin right: 20%;
+  width: 60%;
+  display: block;
+  text-align: centre;
+}
+
+.title-mid {
+  color: white;
+}
+
+.nextPage {
+  background-image: url(./images/coursesButtons-03.png);
+  width: 116px;
+  height: 96px;
+}
+
+/* ----- Page 2 styling ----- */
+.instructions {
+  color: blue;
 }
