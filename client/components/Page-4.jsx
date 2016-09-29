@@ -25,13 +25,13 @@ export default (props) => {
             cosmetics brand etc.
           </p>
 
-          <p>------- input field -----</p>
+          <input type="text" placeholder="" />
 
           <p>
             What is it about this brand that stands out or makes you like it?
           </p>
 
-          <p>------- input field -----</p>
+          <input type="text" placeholder="" />
         </div>
 
         <Link to='page-3'><img src={prev} /></Link>
