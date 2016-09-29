@@ -11,11 +11,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addThing: (e) => {
-      e.preventDefault()
-      dispatch(addThing())
-    }
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(PersonalitiesIndex)
+export default connect(mapStateToProps, mapDispatchToProps)(Index)
