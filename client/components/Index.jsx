@@ -2,20 +2,13 @@ import React from 'react'
 import { Link } from 'react-router'
 import R from 'ramda'
 
-console.log('Index.jsx page loaded log');
-// console.log(this.state.imageInfo);
-// console.log(typeof(state.images));
-
 
 export default (props) => {
+  let nextPageImage = props.imageInfo.nextPage
+
   console.log('');
-  console.log('props log', props);
-  console.log('image info log', props.imageInfo);
-  let info = R.values(props.imageInfo)
-  console.log('info log', info);
-
-  console.log('hello value ', info[3]);
-
+  console.log('props', props.imageInfo);
+  console.log(props.imageInfo.string);
 
   return (
     <div className="IndexContainer">
@@ -26,10 +19,7 @@ export default (props) => {
 
         <h3 className="title-mid">What is branding?</h3>
 
-        <p>hello {info[3]}</p>
-
-        <Link to='page-1'><p>Next Page</p></Link>
-        <div className="nextPage"></div>
+        <Link to='page-1'><img src={nextPageImage} /></Link>
       </div>
     </div>
 
