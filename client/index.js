@@ -17,6 +17,9 @@ import App from './components/App'
 import Index from './containers/IndexContainer'
 import Page1 from './containers/Page-1-Container'
 import Page2 from './containers/Page-2-Container'
+import Page3 from './containers/Page-3-Container'
+import Page4 from './containers/Page-4-Container'
+import Page5 from './containers/Page-5-Container'
 
 // devToolsExtension is a chrome extension for redux development
 let store = createStore(
@@ -36,6 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
           <Route path='page-1' component={Page1} />
           <Route path='page-2' component={Page2} />
+          <Route path='page-3' component={Page3} />
+          <Route path='page-4' component={Page4} />
+          <Route path='page-5' component={Page5} />
 
         </Route>
       </Router>

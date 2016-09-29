@@ -24,11 +24,13 @@ export default (props) => {
         <h2>Putting it all together</h2>
 
         <div className="content">
-          <p>Now you know a bit about your audience, and the different media channels you can use to reach them. So what are you going to say to them?</p>
+          <p>
+          Now you know a bit about your audience, and the different media
+           channels you can use to reach them. So what are you going to say
+            to them?
+          </p>
           <img src={megaPhone} />
         </div>
-
-        <div><p>previous page button placeholder</p></div>
 
           {/* -- can seperate navigation into a seperate component -- */}
           {/* add some logic so next page button onClick page number +1 */}

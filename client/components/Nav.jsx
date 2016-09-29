@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 export default (props) => {
   return (
     <div className="menu-button">
-      <p>MENU button</p>
+      <Link to="/"><p>MENU placeholder</p></Link>
     </div>
   )
 }

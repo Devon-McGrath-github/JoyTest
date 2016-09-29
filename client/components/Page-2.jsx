@@ -37,7 +37,7 @@ export default (props) => {
         <p className="instructions">Tap each topic to learn more</p>
         <Link to='page-1'><img src={prev} /></Link>
         <div className="statusBar"><p className="placeholder-statusBar">----------------</p></div>
-        <Link to='page-2'><img src={next} /></Link>
+        <Link to='page-3'><img src={next} /></Link>
 
       </div>
     </div>
