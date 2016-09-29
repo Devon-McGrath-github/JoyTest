@@ -3,9 +3,11 @@ import { connect } from 'react-redux'
 import Index from '../components/Index'
 
 const mapStateToProps = (state) => {
+  console.log('state index container ', state);
   return {
     hello: state.hello,
-    test: state.test
+    test: state.test,
+    nextPage: state.nextPage
   }
 }
 
@@ -14,4 +16,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Index)
+export default connect(mapStateToProps)(Index)
