@@ -17,6 +17,7 @@ import PersonalitiesIndex from './containers/PersonalitiesIndexContainer'
 import ThingDetail from './containers/ThingDetailContainer'
 
 import Page1 from './components/Page-1'
+import Page2 from './components/Page-2'
 
 let store = createStore(
   appReducer, compose(
@@ -33,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <Route path="/" component={App}>
           <IndexRoute component={PersonalitiesIndex} />
           <Route path='page-1' component={Page1} />
+          <Route path='page-2' component={Page2} />
           <Route name="detail" component={ThingDetail} path="details/:id" />
         </Route>
       </Router>

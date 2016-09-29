@@ -5,6 +5,7 @@ export default (props) => {
 
   return (
     <div className="IndexContainer">
+      <div className="content">
         <div className="menu">
           <p>replace with menu img</p>
         </div>
@@ -13,7 +14,7 @@ export default (props) => {
 
         <Link to='page-1'><p>Next Page</p></Link>
         <div className="nextPage"></div>
-
+      </div>
     </div>
 
   )

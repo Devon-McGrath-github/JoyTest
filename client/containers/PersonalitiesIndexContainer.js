@@ -6,7 +6,7 @@ import { showDetails, addThing } from '../actions'
 const mapStateToProps = (state) => {
   return {
     things: state.things,
-    placeholder: state.placholder,
+    placeholder: state.placholder
   }
 }
 // images: state.images,
