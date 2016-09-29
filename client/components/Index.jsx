@@ -13,10 +13,9 @@ export default (props) => {
   console.log('image info log', props.imageInfo);
   let info = R.values(props.imageInfo)
   console.log('info log', info);
-  // console.log(tester);
-  console.log('hello value ', info.hello);
-  // console.log('test value ', props.test);
-  // console.log('nextPage value ', props.nextPage);
+
+  console.log('hello value ', info[3]);
+
 
   return (
     <div className="IndexContainer">
@@ -27,7 +26,7 @@ export default (props) => {
 
         <h3 className="title-mid">What is branding?</h3>
 
-        <p>hello {}</p>
+        <p>hello {info[3]}</p>
 
         <Link to='page-1'><p>Next Page</p></Link>
         <div className="nextPage"></div>
