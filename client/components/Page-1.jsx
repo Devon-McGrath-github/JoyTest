@@ -12,9 +12,9 @@ export default (props) => {
         <h2>Putting it all together</h2>
 
         <div><p>previous page button placeholder</p></div>
-        <div className="statusBar"><p className="placeholder-statusBar">----------------</p></div>
 
-        <div><p>next page button placeholder (Link/image)</p></div>
+        <Link to='/'><p>Previous</p></Link>
+        <div className="statusBar"><p className="placeholder-statusBar">----------------</p></div>
         <Link to='page-2'><p>Next Page</p></Link>
       </div>
     </div>
