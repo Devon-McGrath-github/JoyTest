@@ -2,17 +2,17 @@ import React from 'react'
 import { Link } from 'react-router'
 import R from 'ramda'
 
+import Nav from './Nav'
 
 export default (props) => {
+  //TODO: lots of boilerplate for images/slow load
   let allImages = props.imageInfo.storedImages
   let next = allImages.nextArrow
 
   return (
     <div className="IndexContainer">
-      <div className="content">
-        <div className="menu">
-          <p>replace with menu img</p>
-        </div>
+      <div className="contentContainer">
+        <Nav />
 
         <h3 className="title-mid">What is branding?</h3>
 

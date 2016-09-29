@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 
-import component from '../components/Page-2'
+import component from '../components/Page-4'
 
 const mapStateToProps = (state) => {
   return {
