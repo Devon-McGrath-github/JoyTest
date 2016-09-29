@@ -4,11 +4,8 @@ import R from 'ramda'
 
 
 export default (props) => {
-  let nextPageImage = props.imageInfo.nextPage
-
-  console.log('');
-  console.log('props', props.imageInfo);
-  console.log(props.imageInfo.string);
+  let allImages = props.imageInfo.storedImages
+  let next = allImages.nextArrow
 
   return (
     <div className="IndexContainer">
@@ -19,7 +16,7 @@ export default (props) => {
 
         <h3 className="title-mid">What is branding?</h3>
 
-        <Link to='page-1'><img src={nextPageImage} /></Link>
+        <Link to='page-1'><img src={next} /></Link>
       </div>
     </div>
 
