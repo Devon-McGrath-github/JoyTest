@@ -6,6 +6,11 @@ const driveImages = [
 
 const INITIAL_STATE = {
   images: driveImages,
+  test: {
+    placeholder: "test url",
+    placeholder2: "test url 2"
+  },
+  string: "hello",
   nextPage: driveImages[0]
 }
 

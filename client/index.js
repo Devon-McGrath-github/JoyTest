@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
     <Provider store={store}>
       <Router history={history}>
         <Route path="/" component={App}>
-
           <IndexRoute component={Index} />
+
           <Route path='page-1' component={Page1} />
           <Route path='page-2' component={Page2} />
 
