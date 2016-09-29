@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 
 export default (props) => {
+  let nextPageImage = props.imageInfo.nextPage
 
   return (
     <div className="pagesContainer">
@@ -16,7 +17,7 @@ export default (props) => {
 
         <p className="instructions">Tap each topic to learn more</p>
         <Link to='page-1'><p>Previous</p></Link>
-        <Link to='page-2'><p>Next Page</p></Link>
+        <Link to='page-2'><img src={nextPageImage} /></Link>
 
       </div>
     </div>

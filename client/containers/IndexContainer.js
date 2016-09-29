@@ -5,10 +5,6 @@ import Index from '../components/Index'
 const mapStateToProps = (state) => {
   return {
     imageInfo: state.imageInfo
-    // hello: state.hello,
-    // test: state.test,
-    // nextPage: state.nextPage,
-    // imageInfo: state.imageInfo
   }
 }
 

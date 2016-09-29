@@ -1,17 +1,16 @@
 import { connect } from 'react-redux'
 
-import Nav from '../components/Nav'
+import component from '../components/Page-2'
 
 const mapStateToProps = (state) => {
   return {
-    auth: state.auth
+    imageInfo: state.imageInfo
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    // logout dispatcher
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Nav)
+export default connect(mapStateToProps)(component)

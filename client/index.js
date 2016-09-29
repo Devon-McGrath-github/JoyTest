@@ -15,9 +15,8 @@ import appReducer from './reducers/combineReducers'
 
 import App from './components/App'
 import Index from './containers/IndexContainer'
-
-import Page1 from './components/Page-1'
-import Page2 from './components/Page-2'
+import Page1 from './containers/Page-1-Container'
+import Page2 from './containers/Page-2-Container'
 
 // devToolsExtension is a chrome extension for redux development
 let store = createStore(
