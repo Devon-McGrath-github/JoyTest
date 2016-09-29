@@ -5,6 +5,7 @@ import R from 'ramda'
 import Nav from './Nav'
 
 export default (props) => {
+  //TODO: lots of boilerplate for images/slow load
   let allImages = props.imageInfo.storedImages
   let next = allImages.nextArrow
 
