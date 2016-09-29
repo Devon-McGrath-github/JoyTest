@@ -1,6 +1,6 @@
 #Branding - Dev Trial
 
-My Work for JoyBusinessAcademy
+My Work for JoyBusinessAcademy trial period
 
 ## project setup
 
