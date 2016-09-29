@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router'
 
+import Nav from './Nav'
+
 export default (props) => {
   let allImages = props.imageInfo.storedImages
   let next = allImages.nextArrow
@@ -12,9 +14,7 @@ export default (props) => {
   return (
     <div className="pagesContainer">
       <div className="contentContainer">
-        <div className="menu-button">
-          <p>MENU button</p>
-        </div>
+        <Nav />
 
         <h3 className="title-mid">Measuring Effectiveness Depends on the method</h3>
 
@@ -31,6 +31,7 @@ export default (props) => {
 
         <p className="instructions">Tap each topic to learn more</p>
         <Link to='page-1'><img src={prev} /></Link>
+        <div className="statusBar"><p className="placeholder-statusBar">----------------</p></div>
         <Link to='page-2'><img src={next} /></Link>
 
       </div>

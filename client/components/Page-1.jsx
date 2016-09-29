@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router'
 
+import Nav from './Nav'
+
 export default (props) => {
   let allImages = props.imageInfo.storedImages
   let next = allImages.nextArrow
@@ -11,9 +13,7 @@ export default (props) => {
   return (
     <div className="pagesContainer">
       <div className="contentContainer">
-        <div className="menu-button">
-          <p>MENU button</p>
-        </div>
+        <Nav />
 
         <h2>Putting it all together</h2>
 

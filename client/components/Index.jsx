@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import R from 'ramda'
 
+import Nav from './Nav'
 
 export default (props) => {
   let allImages = props.imageInfo.storedImages
@@ -10,9 +11,7 @@ export default (props) => {
   return (
     <div className="IndexContainer">
       <div className="contentContainer">
-        <div className="menu-button">
-          <p>MENU button</p>
-        </div>
+        <Nav />
 
         <h3 className="title-mid">What is branding?</h3>
 
