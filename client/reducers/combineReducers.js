@@ -3,12 +3,11 @@ import { routerReducer } from 'react-router-redux'
 
 // import auth from './authReducer'
 import imageInfo from './ImageReducer'
-import banana from './bananaReducer'
+// import banana from './bananaReducer'
 
 const reducers = {
   routing: routerReducer,
-  imageInfo: imageInfo,
-  banana: banana
+  imageInfo: imageInfo
 }
 
 const appReducer = combineReducers(reducers)
