@@ -14,32 +14,40 @@ export default (props) => {
   // Pink Buttons
   const buttonUnticked = allImages.buttonUnticked
   const buttonTicked = allImages.buttonTicked
+  // TODO: need to add toggle logic
+
 
   return (
     <div className="pagesContainer">
       <div className="contentContainer">
         <Nav />
 
-        <h3 className="title">Measuring Effectiveness Depends on the method</h3>
+        <div className="title">
+          <h2>Measuring Effectiveness Depends on the method</h2>
+        </div>
 
         <div className="content">
           <p>Digital or print, campaign or not - the actual things you're measuring will depend on your communication strategy. Tap each topic below to learn more</p>
 
           {/* TODO: allow images to be toggled, make them buttons */}
           {/* reduce Z-INDEX of images so text will be ontop */}
-          <img src={buttonUnticked}/>
-          <img src={buttonUnticked}/>
-          <img src={buttonUnticked}/>
+          <ul className="topicList">
+            <li><div><img src={buttonUnticked}/></div></li>
+            <li><img src={buttonUnticked}/></li>
+            <li><img src={buttonUnticked}/></li>
+
+          </ul>
 
         </div>
 
+        <div className="instructions">
+          <p>Tap each topic to learn more</p>
+        </div>
 
-
-        <p className="instructions">Tap each topic to learn more</p>
-        <Link to='page-1'><img src={prev} /></Link>
-        <div className="statusBar"><p className="placeholder-statusBar">----------------</p></div>
-        <Link to='page-3'><img src={next} /></Link>
-
+        <div className="navArrows">
+          <Link to='page-1'><img className="prevPage" src={prev} /></Link>
+          <Link to='page-3'><img className="nextPage" src={next} /></Link>
+        </div>
       </div>
     </div>
   )
