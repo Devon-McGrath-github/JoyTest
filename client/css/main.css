@@ -3,39 +3,58 @@ html, body, #app {
   margin: 0;
 }
 
-p, h1, h2, h3 {
-  margin: 0;
-  padding: 0;
-}
-
-h3 {
-  color: white;
-}
-
 #app-view {
   height: 100%;
   padding: 0px;
   display: fixed;
 }
 
-/* ---- Nav Arrows ---- */
+p, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- main heading Index Page ---- */
+h3 {
+  color: white;
+  font-size: 2em;
+}
+
+/* ---- Nav styling ---- */
+
+.menu-button {
+
+}
+
+/* ---- subNav Arrows ---- */
 
 .navArrows {
   bottom: 0;
   position: absolute;
+  height: 10%;
   width: 100%;
+  padding: 0, 0, 3%, 0;
   padding-bottom: 3%;
+  display: inline-block;
+}
+
+.prevPage {
+  float: left;
+  margin-left: 3%;
+  display: inline-block;
 }
 
 .nextPage {
   float: right;
   margin-right: 3%;
-  display: block;
+  display: inline-block;
+  height: 100%;
 }
+
 
 /* ---- Index Page ---- */
 
-.IndexContainer {
+.indexContainer {
   background-color: purple;
   padding: 0px;
   height: 100%;
@@ -48,46 +67,46 @@ h3 {
   width: 100%;
 }
 
-
-.titleContainer {
+.mainHeading {
   width: 100%;
   text-align: center;
   position: absolute;
   top: 50%;
-
 }
 
-.title-mid {
+/* ---- basic page styling ---- */
 
-
-}
-
-/* ---- pages Container ---- */
 .pagesContainer {
   background-color: white;
   padding: 0px;
   height: 100%;
+  width: 100%;
 }
-
-/* ----- END pagesContainer END ---- */
 
 .content {
-  margin-left: 20%;
-  margin right: 20%;
-  width: 60%;
-  display: block;
-  text-align: centre;
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.title-mid {
-  color: white;
+.title {
+  text-align: center;
+  display:inline-block;
+  width: 100%;
+  margin-bottom: 5%;
 }
 
-.nextPage {
-  background-image: url(./images/coursesButtons-03.png);
-  width: 116px;
-  height: 96px;
-}
+/* ----- END basic page styling END ---- */
+
+/* ---- page-1 styling ---- */
+/* should be a seperate css page
+  (not enough styling atm to warrant) */
+
+/* media query so image shrinks */
+/*.megaPhone {
+  width: 100%;
+}*/
 
 /* ----- Page 2 styling ----- */
 .instructions {

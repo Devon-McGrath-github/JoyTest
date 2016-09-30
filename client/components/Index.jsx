@@ -10,10 +10,10 @@ export default (props) => {
   let next = allImages.nextArrow
 
   return (
-    <div className="IndexContainer">
+    <div className="indexContainer">
       <div className="contentContainer">
         <Nav />
-        <div className="titleContainer">
+        <div className="mainHeading">
           <h3>What is branding?</h3>
         </div>
 
