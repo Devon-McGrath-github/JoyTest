@@ -16,7 +16,9 @@ export default (props) => {
       <div className="contentContainer">
         <Nav />
 
-        <h2>Do you have a brand you identify with?</h2>
+        <div className="title">
+          <h2>Do you have a brand you identify with?</h2>
+        </div>
 
         <div className="content">
           <p>
@@ -34,9 +36,10 @@ export default (props) => {
           <input type="text" placeholder="" />
         </div>
 
-        <Link to='page-3'><img src={prev} /></Link>
-        <div className="statusBar"><p className="placeholder-statusBar">----------------</p></div>
-        <Link to='page-5'><img src={next} /></Link>
+        <div className="navArrows">
+          <Link to='page-3'><img className="prevPage" src={prev} /></Link>
+          <Link to='page-5'><img className="nextPage" src={next} /></Link>
+        </div>
       </div>
     </div>
   )

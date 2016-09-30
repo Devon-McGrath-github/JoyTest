@@ -16,7 +16,9 @@ export default (props) => {
       <div className="contentContainer">
         <Nav />
 
-        <h2>Whats this section about?</h2>
+        <div className="title">
+          <h2>Whats this section about?</h2>
+        </div>
 
         <div className="content-box">
           <p>
@@ -31,7 +33,9 @@ export default (props) => {
 
         </div>
 
-        <Link to='page-5'><img src={next} /></Link>
+        <div className="navArrows">
+          <Link to='page-5'><img className="nextPage" src={next} /></Link>
+        </div>
       </div>
     </div>
   )
