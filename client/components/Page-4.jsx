@@ -27,13 +27,13 @@ export default (props) => {
             cosmetics brand etc.
           </p>
 
-          <input type="text" placeholder="" />
+          <input className="inputField" type="text" placeholder="" />
 
           <p>
             What is it about this brand that stands out or makes you like it?
           </p>
 
-          <input type="text" placeholder="" />
+          <input className="inputField" type="text" placeholder="" />
         </div>
 
         <div className="navArrows">

@@ -13,18 +13,18 @@ export default (props) => {
 
   return (
     <div className="pagesContainer">
-      <div className="contentContainer">
+      <div className="page5-Content-Container">
         <Nav />
 
         <div className="title">
-          <h2>Whats this section about?</h2>
+          <h2>What's this section about?</h2>
         </div>
 
         <div className="content-box">
           <p>
             In this bit we'll take a look at the following questions:
           </p>
-          <ul>
+          <ul className="page5-list">
             {/* image can be added in css with list-style-image property */}
             <li>What is branding?</li>
             <li>Whats the difference between branding and marketing?</li>

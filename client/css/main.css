@@ -155,3 +155,39 @@ ul.topicList {
 }
 
 /* ---- Page 3 styling ----- */
+
+.logo {
+
+}
+
+.yes-noContainer {
+  display: block;
+}
+
+/* ---- Page 4 styling ---- */
+
+.inputField {
+  width: 80%;
+  margin: 2% 10% 2% 10%;
+}
+
+/* ---- Page 5 styling ---- */
+
+.content-box {
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 40%;
+  text-align: center;
+}
+
+.page5-Content-Container {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(246, 255, 232);
+}
+
+.page5-list {
+  text-align: left;
+}

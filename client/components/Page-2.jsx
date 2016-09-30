@@ -33,8 +33,11 @@ export default (props) => {
           {/* reduce Z-INDEX of images so text will be ontop */}
           <ul className="topicList">
             <li>
+              {/* TODO: fix this ugly/broken mess */}
               <div className="liContainer">
-                <img className="listButton" src={buttonUnticked}/>
+                <div className="example">
+                  <img className="listButton" src={buttonUnticked}/>
+                </div>
                 <div className="text">
                   <p>text</p>
                 </div>

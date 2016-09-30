@@ -28,8 +28,13 @@ export default (props) => {
             brands in your life! (if you did grow up on Mars, then welcome
             to Earth and try the pineapple lumps...they're delicious!)
           </p>
-          <img src={logos} />
+          <img className="logo" src={logos} />
 
+          {/*TODO: popup information */}
+          <div className="yes-noContainer">
+            <button>yes</button>
+            <button>no</button>
+          </div>
         </div>
 
         <div className="navArrows">
