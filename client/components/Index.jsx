@@ -10,15 +10,22 @@ export default (props) => {
   let next = allImages.nextArrow
 
   return (
-    <div className="IndexContainer">
+    <div className="indexContainer">
+      {/* above div allows comments here, does nothing else */}
+      {/* container that holds all content on the page, required for redux */}
       <div className="contentContainer">
+        {/* imported Nav component */}
         <Nav />
 
-        <h3 className="title-mid">What is branding?</h3>
+        <div className="mainHeading">
+          <h3>What is branding?</h3>
+        </div>
 
-        <Link to='page-1'><img src={next} /></Link>
+        {/* main navigation buttons */}
+        <div className="navArrows">
+          <Link to='page-1'><img className="nextPage" src={next} /></Link>
+        </div>
       </div>
     </div>
-
   )
 }

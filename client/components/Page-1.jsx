@@ -4,7 +4,9 @@ import { Link } from 'react-router'
 import Nav from './Nav'
 
 export default (props) => {
-  //TODO: lots of boilerplate for images/slow load
+  //TODO: lots of boilerplate for images/slow load time
+  // action that requests images from database dispatched
+  // from index.js?
   let allImages = props.imageInfo.storedImages
 
   // bottom page sub nav bar
@@ -21,24 +23,31 @@ export default (props) => {
       <div className="contentContainer">
         <Nav />
 
-        <h2>Putting it all together</h2>
+        <div className="title">
+          <h2>Putting it all together</h2>
+        </div>
 
+        {/* main content block */}
+        {/* could include title if desired */}
         <div className="content">
           <p>
           Now you know a bit about your audience, and the different media
            channels you can use to reach them. So what are you going to say
             to them?
           </p>
-          <img src={megaPhone} />
+
+          {/* TODO: style image, so its mobile friendly (sized with % media queries) */}
+          <img className="megaPhone" src={megaPhone} />
         </div>
 
-          {/* -- can seperate navigation into a seperate component -- */}
-          {/* add some logic so next page button onClick page number +1 */}
-          {/* vice versa, seperate it into a component, reduce repitiion */}
-          {/* also if pageNumber = 0, return "/" else ..... */}
-        <Link to='/'><img src={prev} /></Link>
-        <div className="statusBar"><p className="placeholder-statusBar">----------------</p></div>
-        <Link to='page-2'><img src={next} /></Link>
+        {/* -- can seperate navigation into a seperate component -- */}
+        {/* add some logic so next page button onClick page number +1 */}
+        {/* vice versa, seperate it into a component, reduce repitiion */}
+        {/* also if pageNumber = 0, return "/" else ..... */}
+        <div className="navArrows">
+          <Link to='/'><img className="prevPage" src={prev} /></Link>
+          <Link to='page-2'><img className="nextPage" src={next} /></Link>
+        </div>
       </div>
     </div>
   )

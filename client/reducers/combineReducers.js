@@ -1,9 +1,9 @@
+// this setup allows for modular reducers
 import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
 
-// import auth from './authReducer'
+// only one reducer at the moment so not hugely useful yet.
 import imageInfo from './ImageReducer'
-// import banana from './bananaReducer'
 
 const reducers = {
   routing: routerReducer,

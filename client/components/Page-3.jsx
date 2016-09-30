@@ -18,7 +18,9 @@ export default (props) => {
       <div className="contentContainer">
         <Nav />
 
-        <h2>Unless you grew up on Mars</h2>
+        <div className="title">
+          <h2>Unless you grew up on Mars</h2>
+        </div>
 
         <div className="content">
           <p>
@@ -26,13 +28,19 @@ export default (props) => {
             brands in your life! (if you did grow up on Mars, then welcome
             to Earth and try the pineapple lumps...they're delicious!)
           </p>
-          <img src={logos} />
+          <img className="logo" src={logos} />
 
+          {/*TODO: popup information */}
+          <div className="yes-noContainer">
+            <button>yes</button>
+            <button>no</button>
+          </div>
         </div>
 
-        <Link to='page-2'><img src={prev} /></Link>
-        <div className="statusBar"><p className="placeholder-statusBar">----------------</p></div>
-        <Link to='page-4'><img src={next} /></Link>
+        <div className="navArrows">
+          <Link to='page-2'><img className="prevPage" src={prev} /></Link>
+          <Link to='page-4'><img className="nextPage" src={next} /></Link>
+        </div>
       </div>
     </div>
   )

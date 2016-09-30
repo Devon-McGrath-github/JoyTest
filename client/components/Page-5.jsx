@@ -13,16 +13,20 @@ export default (props) => {
 
   return (
     <div className="pagesContainer">
-      <div className="contentContainer">
+      {/* TODO: choose better className */}
+      {/* div name changed for unique page styling */}
+      <div className="page5-Content-Container">
         <Nav />
 
-        <h2>Whats this section about?</h2>
+        <div className="title">
+          <h2>What's this section about?</h2>
+        </div>
 
         <div className="content-box">
           <p>
             In this bit we'll take a look at the following questions:
           </p>
-          <ul>
+          <ul className="page5-list">
             {/* image can be added in css with list-style-image property */}
             <li>What is branding?</li>
             <li>Whats the difference between branding and marketing?</li>
@@ -31,9 +35,10 @@ export default (props) => {
 
         </div>
 
-        <Link to='page-4'><img src={prev} /></Link>
-        <div className="statusBar"><p className="placeholder-statusBar">----------------</p></div>
-        <Link to='page-5'><img src={next} /></Link>
+        <div className="navArrows">
+          {/* in the example there is no previous arrow */}
+          <Link to='page-5'><img className="nextPage" src={next} /></Link>
+        </div>
       </div>
     </div>
   )
