@@ -13,6 +13,8 @@ export default (props) => {
 
   return (
     <div className="pagesContainer">
+      {/* TODO: choose better className */}
+      {/* div name changed for unique page styling */}
       <div className="page5-Content-Container">
         <Nav />
 

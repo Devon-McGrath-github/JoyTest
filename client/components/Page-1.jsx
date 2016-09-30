@@ -4,7 +4,9 @@ import { Link } from 'react-router'
 import Nav from './Nav'
 
 export default (props) => {
-  //TODO: lots of boilerplate for images/slow load
+  //TODO: lots of boilerplate for images/slow load time
+  // action that requests images from database dispatched
+  // from index.js?
   let allImages = props.imageInfo.storedImages
 
   // bottom page sub nav bar
