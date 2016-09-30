@@ -13,10 +13,13 @@ export default (props) => {
     <div className="IndexContainer">
       <div className="contentContainer">
         <Nav />
+        <div className="titleContainer">
+          <h3>What is branding?</h3>
+        </div>
 
-        <h3 className="title-mid">What is branding?</h3>
-
-        <Link to='page-1'><img src={next} /></Link>
+        <div className="navArrows">
+          <Link to='page-1'><img className="nextPage" src={next} /></Link>
+        </div>
       </div>
     </div>
 

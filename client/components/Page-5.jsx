@@ -31,8 +31,6 @@ export default (props) => {
 
         </div>
 
-        <Link to='page-4'><img src={prev} /></Link>
-        <div className="statusBar"><p className="placeholder-statusBar">----------------</p></div>
         <Link to='page-5'><img src={next} /></Link>
       </div>
     </div>

@@ -26,6 +26,7 @@ export default (props) => {
           <p>Digital or print, campaign or not - the actual things you're measuring will depend on your communication strategy. Tap each topic below to learn more</p>
 
           {/* TODO: allow images to be toggled, make them buttons */}
+          {/* reduce Z-INDEX of images so text will be ontop */}
           <img src={buttonUnticked}/>
           <img src={buttonUnticked}/>
           <img src={buttonUnticked}/>

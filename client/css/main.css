@@ -5,6 +5,11 @@ html, body, #app {
 
 p, h1, h2, h3 {
   margin: 0;
+  padding: 0;
+}
+
+h3 {
+  color: white;
 }
 
 #app-view {
@@ -13,10 +18,48 @@ p, h1, h2, h3 {
   display: fixed;
 }
 
+/* ---- Nav Arrows ---- */
+
+.navArrows {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 3%;
+}
+
+.nextPage {
+  float: right;
+  margin-right: 3%;
+  display: block;
+}
+
+/* ---- Index Page ---- */
+
 .IndexContainer {
   background-color: purple;
   padding: 0px;
   height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.contentContainer {
+  height: 100%;
+  width: 100%;
+}
+
+
+.titleContainer {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+
+}
+
+.title-mid {
+
+
 }
 
 /* ---- pages Container ---- */
