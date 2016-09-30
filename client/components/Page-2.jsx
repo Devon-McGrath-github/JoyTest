@@ -15,7 +15,7 @@ export default (props) => {
   const buttonUnticked = allImages.buttonUnticked
   const buttonTicked = allImages.buttonTicked
   // TODO: need to add toggle logic
-
+  // 
 
   return (
     <div className="pagesContainer">
@@ -30,10 +30,13 @@ export default (props) => {
           <p>Digital or print, campaign or not - the actual things you're measuring will depend on your communication strategy. Tap each topic below to learn more</p>
 
           {/* TODO: allow images to be toggled, make them buttons */}
-          {/* reduce Z-INDEX of images so text will be ontop */}
           <ul className="topicList">
-            <li>
-              {/* TODO: fix this ugly/broken mess */}
+
+            {/* <li>
+              // TODO: fix this ugly/broken mess
+              this does not position text within image
+              (see appropriate css)
+
               <div className="liContainer">
                 <div className="example">
                   <img className="listButton" src={buttonUnticked}/>
@@ -42,7 +45,9 @@ export default (props) => {
                   <p>text</p>
                 </div>
               </div>
-            </li>
+            </li> */}
+
+            <li><img src={buttonUnticked}/></li>
             <li><img src={buttonUnticked}/></li>
             <li><img src={buttonUnticked}/></li>
 

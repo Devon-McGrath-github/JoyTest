@@ -25,12 +25,16 @@ export default (props) => {
           <h2>Putting it all together</h2>
         </div>
 
+        {/* main content block */}
+        {/* could include title if desired */}
         <div className="content">
           <p>
           Now you know a bit about your audience, and the different media
            channels you can use to reach them. So what are you going to say
             to them?
           </p>
+
+          {/* TODO: style image, so its mobile friendly (sized with % media queries) */}
           <img className="megaPhone" src={megaPhone} />
         </div>
 

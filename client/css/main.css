@@ -191,5 +191,7 @@ ul.topicList {
 .page5-list {
   text-align: left;
   list-style-position: inside;
+  /* image in slideshow was not in the assets folder */
+  /* this is a placeholder */
   list-style-image: url('https://firebasestorage.googleapis.com/v0/b/wotwot-4b943.appspot.com/o/images%2FcoursesButtons-04.png?alt=media&token=9a2967b6-9333-40a1-a081-c4b2b556a4c4');l
 }
