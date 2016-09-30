@@ -116,6 +116,33 @@ ul.topicList {
   padding: 0;
 }
 
+.liContainer{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.example {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.listButton {
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  float:left;
+  position: relative;
+}
+
+.text {
+  z-index: 10;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+}
+
 .instructions {
   color: blue;
   text-align: center;

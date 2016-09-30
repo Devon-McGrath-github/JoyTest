@@ -34,6 +34,7 @@ export default (props) => {
         </div>
 
         <div className="navArrows">
+          {/* in the example there is no previous arrow */}
           <Link to='page-5'><img className="nextPage" src={next} /></Link>
         </div>
       </div>

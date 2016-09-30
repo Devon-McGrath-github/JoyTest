@@ -32,7 +32,14 @@ export default (props) => {
           {/* TODO: allow images to be toggled, make them buttons */}
           {/* reduce Z-INDEX of images so text will be ontop */}
           <ul className="topicList">
-            <li><div><img src={buttonUnticked}/></div></li>
+            <li>
+              <div className="liContainer">
+                <img className="listButton" src={buttonUnticked}/>
+                <div className="text">
+                  <p>text</p>
+                </div>
+              </div>
+            </li>
             <li><img src={buttonUnticked}/></li>
             <li><img src={buttonUnticked}/></li>
 
