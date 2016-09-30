@@ -2,6 +2,8 @@
 
 My Work for JoyBusinessAcademy trial period
 
+currently still work in progress
+
 ## project setup
 
 * Clone Repository
